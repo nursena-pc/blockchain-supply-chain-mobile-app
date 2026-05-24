@@ -136,7 +136,7 @@ The application supports both light and dark themes. The navigation drawer provi
 |---|---|---|
 | <img src="docs/screenshots/login.png" width="240"/> | <img src="docs/screenshots/product-scan.png" width="240"/> | <img src="docs/screenshots/product-detail.png" width="240"/> |
 
-| Product Management | Analytics Dashboard | Settings & Theme |
+| Product Management | Analytics Dashboard | Settings | 
 |---|---|---|
 | <img src="docs/screenshots/product-management.png" width="240"/> | <img src="docs/screenshots/analytics.png" width="240"/> | <img src="docs/screenshots/settings.png" width="240"/> |
 
