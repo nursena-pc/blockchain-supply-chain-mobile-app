@@ -1,78 +1,152 @@
-# Tedarik Zinciri Mobil Uygulaması (Flutter + IPFS + Blockchain)
+# Blockchain Supply Chain Mobile App
 
+> 🇹🇷 Flutter, IPFS ve Blockchain teknolojileri kullanılarak geliştirilen; ürünlerin üretimden teslimata kadar olan süreçlerini şeffaf, güvenli ve doğrulanabilir şekilde takip etmeyi amaçlayan mobil tedarik zinciri uygulaması.
 
-Tedarik Zinciri Mobil Uygulaması, ürünlerin üretimden teslimata kadar olan tüm süreçlerini şeffaf ve güvenli bir şekilde takip etmeyi amaçlayan yenilikçi bir mobil platformdur. Flutter ile geliştirilen bu uygulama, IPFS ve Blockchain teknolojilerini birleştirerek merkeziyetsiz veri saklama ve doğrulama işlevlerini mobil kullanıcı deneyimiyle entegre etmektedir.
+A Flutter-based mobile supply chain tracking application that combines QR code verification, IPFS-based decentralized data access, blockchain-based validation, producer authorization, product management and analytics features in a single mobile experience.
 
-Kullanıcılar, bir ürünün QR kodunu tarayarak IPFS üzerinde saklanan veriye ulaşabilir; üreticiler ise kimliklerini doğrulayarak ürünleri sisteme ekleyebilir veya güncelleyebilir. Aynı zamanda uygulama içerisinde not alma, medya (ses, çizim, resim) ekleme, analiz ekranı, kullanıcı profili ve güvenli erişim özellikleri de sunulmaktadır.
+---
 
-~ QR Kod ile Ürün Doğrulama: Kullanıcılar ürün üzerindeki QR kodu tarayarak, IPFS’teki veriye ulaşır ve ürün detaylarını görüntüler.
+## Project Overview
 
-~ Ürün Ekleme & Güncelleme: Üreticiler, sadece kendilerine ait ürünleri doğrulayarak sisteme yeni veri ekleyebilir veya mevcut ürünü güncelleyebilir.
+This project was developed to improve transparency, traceability and trust in supply chain processes. The application allows users to verify product information by scanning QR codes, while authorized producers can add and update product records through a secure mobile interface.
 
-~ Tedarik Süreci Takibi: Ürünlerin üretim, paketleme, depolama, sevkiyat gibi durumları zaman damgası ile birlikte kayıt altına alınır.
+Product-related data can be accessed through IPFS, while blockchain-based validation supports data integrity and traceability. The application also provides product management workflows, recent transaction tracking, analytics screens and secure access features.
 
-~ Analiz Ekranı: Kullanıcının eklediği ürünlerin marka ve şehir bazlı dağılımı grafikler ile görselleştirilir.
+The goal of the project is to make product history more transparent from production to delivery by combining decentralized technologies with a user-friendly mobile application.
 
-~ Not Özelliği & Zengin İçerik: Ses, çizim, fotoğraf, hatırlatma, arka plan ve kilitleme özellikleriyle güçlü bir not deneyimi sunulur.
+---
 
-~ Versiyon Sistemi: Notların önceki versiyonları kaydedilir, listelenebilir ve geri yüklenebilir.
+## Project Highlights
 
-~ Gelişmiş Güvenlik: Firebase kimlik doğrulama, PIN ile kilitli not koruması, session yönetimi ve giriş kontrolü desteklenir.
+- Flutter-based cross-platform mobile application
+- QR code-based product verification
+- IPFS-based decentralized product data access
+- Blockchain-supported product validation approach
+- Producer authentication and authorization flow
+- Product creation and update workflows
+- Supply chain status tracking
+- Product detail visualization
+- Recent actions / transaction history tracking
+- Product analytics by brand and city
+- Light and dark theme support
+- Navigation drawer with user profile information
+- Secure token-based access flow
+- Session management and login control
+- Modern and user-friendly mobile UI
 
-~ Modern UI & UX: Kullanıcı dostu tasarım, sade ve sezgisel arayüz, tema desteği ve dinamik yapı
+---
 
-#                                           login sayfaları
-<img width="150" height="350" alt="Ekran görüntüsü 2025-07-25 184740" src="https://github.com/user-attachments/assets/72a1b80f-11da-4141-adff-650e8b54a9d5" />                                                          
-<img width="150" height="350" alt="Ekran görüntüsü 2025-07-25 185736" src="https://github.com/user-attachments/assets/0e413fca-3e55-4ba5-8171-97da27d64c74" />
+## Main Features
 
-# UI sayfaları
-<img width="150" height="350" alt="Ekran görüntüsü 2025-07-25 190047" src="https://github.com/user-attachments/assets/ac833785-7e31-4c8a-a021-2e4dc6fd9471" />
-<img width="150" height="350" alt="Ekran görüntüsü 2025-07-25 190310" src="https://github.com/user-attachments/assets/238333a1-95a6-4830-9484-2da7c9303179" />
-<img width="150" height="350" alt="Ekran görüntüsü 2025-07-25 190352" src="https://github.com/user-attachments/assets/1163b87e-76f2-4323-a4ef-d1146051f536" />
-<img width="150" height="350" alt="Ekran görüntüsü 2025-07-25 190333" src="https://github.com/user-attachments/assets/36dbdc75-b1bb-4dec-9578-8acbe1b4adf3" />
+### QR Code Product Verification
 
-# ürün ekleme ve QR paylaşımı
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/2891bc98-4df7-4490-931e-c5ee63f68bde" />
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/c63f4d8c-7281-4494-a07a-3478c3c06bbb" />
+Users can scan the QR code on a product to access product-related information. This allows users to verify product details and inspect supply chain data more transparently.
 
-# QR okuyucu ve Ürün detay ekranı
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/a94e9efb-926a-45dd-9ee1-2b33b0a1abda" />
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/8b2d8583-8bcb-4cf3-966f-e7c5ed9890d0" />
+The QR-based verification flow helps make product history accessible and easy to validate from a mobile device.
 
-# ürün güncelleme
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/acb96884-3414-4b9a-aba0-0ace2517d6f7" />
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/eda4396f-a43d-4815-870b-3a20043175a6" />
+### Product Management
 
-# son işlemler
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/2663586c-3a84-4fe5-805a-cff9d4dec8a5" />
+Authorized producers can add new products or update existing product records.
 
+Product management features include:
 
-# analiz
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/039abc80-b548-44cd-bae1-9da38980f27d" />
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/034350a9-c128-4336-9165-ed8206b9d854" />
+- Product creation
+- Product update
+- Producer-based access control
+- QR code generation / sharing workflow
+- Product status management
+- Product detail tracking
 
-# ayarlar
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/bcc5b7a7-c5b6-48ee-9cd5-c043bff1f8c9" />
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/826f6f4e-c427-4274-bccb-f4736278b1e1" />
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/b9cd78b4-7aeb-4eb2-8f4f-8c97396aa7c2" />
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/23e44d67-5718-4c4a-9da0-fe76a8b08e22" />
-<img width="150" height="350" alt="image" src="https://github.com/user-attachments/assets/5aaea48a-db9e-48a1-8497-a95c56eb4d39" />
-<img width="450" height="350" alt="image" src="https://github.com/user-attachments/assets/46b360cb-eb52-40a8-82a4-24aa72654a0d" />
+### Supply Chain Tracking
 
+The application supports tracking product states across the supply chain process.
 
+Example product states include:
 
+- Production
+- Packaging
+- Storage
+- Shipment
+- Delivery
 
+This structure helps create a more traceable and transparent product journey.
 
+### IPFS & Blockchain-Based Validation
 
+The application combines IPFS and blockchain concepts to support decentralized and verifiable product data management.
 
+- IPFS is used for decentralized data access.
+- Blockchain-based validation supports transparency and data integrity.
+- QR codes connect physical products with digital records.
 
+### Analytics Dashboard
 
+The analytics screen visualizes product distribution and activity data.
 
+Analytics features include:
 
+- Brand-based product distribution
+- City-based product distribution
+- Product statistics
+- Visual charts for easier interpretation
 
+### Recent Actions
 
+The application includes a recent actions section where users can view recent product-related operations.
 
+This improves traceability and helps users monitor product management activity.
 
+### Security & Access Control
 
+The application includes several security-focused mechanisms:
 
+- Firebase Authentication
+- Producer identity control
+- Secure login flow
+- Session management
+- Token-based access
+- Role-based product update logic
+- Safe logout flow
 
+### Theme & User Experience
+
+The application supports both light and dark themes. The navigation drawer provides user profile information, role details, security badge information and access to settings.
+
+---
+
+## Technologies Used
+
+- Flutter
+- Dart
+- IPFS
+- Blockchain
+- Firebase Authentication
+- QR Code Scanner
+- QR Code Generation
+- Secure session management
+- Local storage
+- Chart / analytics visualization
+- Mobile UI / UX design
+
+---
+
+## Screenshots
+
+| Login & Register | QR Product Scan | Product Detail |
+|---|---|---|
+| <img src="docs/screenshots/login.png" width="240"/> | <img src="docs/screenshots/product-scan.png" width="240"/> | <img src="docs/screenshots/product-detail.png" width="240"/> |
+
+| Product Management | Analytics Dashboard | Settings & Theme |
+|---|---|---|
+| <img src="docs/screenshots/product-management.png" width="240"/> | <img src="docs/screenshots/analytics.png" width="240"/> | <img src="docs/screenshots/settings.png" width="240"/> |
+
+> Screenshots were captured using demo data.
+
+---
+
+## Suggested Screenshot Files
+
+To make the README display correctly, upload screenshots under:
+
+```text
+docs/screenshots/
